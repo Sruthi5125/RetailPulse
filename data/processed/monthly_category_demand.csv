@@ -1,0 +1,145 @@
+Month,Category,Quantity
+2012-01-01,Furniture,246
+2012-01-01,Office Supplies,997
+2012-01-01,Technology,220
+2012-02-01,Furniture,278
+2012-02-01,Office Supplies,800
+2012-02-01,Technology,323
+2012-03-01,Furniture,319
+2012-03-01,Office Supplies,1093
+2012-03-01,Technology,333
+2012-04-01,Furniture,326
+2012-04-01,Office Supplies,1233
+2012-04-01,Technology,375
+2012-05-01,Furniture,409
+2012-05-01,Office Supplies,1268
+2012-05-01,Technology,490
+2012-06-01,Furniture,680
+2012-06-01,Office Supplies,1746
+2012-06-01,Technology,576
+2012-07-01,Furniture,313
+2012-07-01,Office Supplies,1142
+2012-07-01,Technology,381
+2012-08-01,Furniture,569
+2012-08-01,Office Supplies,1822
+2012-08-01,Technology,629
+2012-09-01,Furniture,757
+2012-09-01,Office Supplies,2327
+2012-09-01,Technology,560
+2012-10-01,Furniture,637
+2012-10-01,Office Supplies,1773
+2012-10-01,Technology,571
+2012-11-01,Furniture,799
+2012-11-01,Office Supplies,2341
+2012-11-01,Technology,784
+2012-12-01,Furniture,963
+2012-12-01,Office Supplies,2447
+2012-12-01,Technology,916
+2013-01-01,Furniture,400
+2013-01-01,Office Supplies,1108
+2013-01-01,Technology,366
+2013-02-01,Furniture,286
+2013-02-01,Office Supplies,839
+2013-02-01,Technology,319
+2013-03-01,Furniture,457
+2013-03-01,Office Supplies,1316
+2013-03-01,Technology,464
+2013-04-01,Furniture,422
+2013-04-01,Office Supplies,1298
+2013-04-01,Technology,530
+2013-05-01,Furniture,481
+2013-05-01,Office Supplies,1872
+2013-05-01,Technology,568
+2013-06-01,Furniture,718
+2013-06-01,Office Supplies,2236
+2013-06-01,Technology,717
+2013-07-01,Furniture,466
+2013-07-01,Office Supplies,1402
+2013-07-01,Technology,453
+2013-08-01,Furniture,647
+2013-08-01,Office Supplies,2370
+2013-08-01,Technology,801
+2013-09-01,Furniture,803
+2013-09-01,Office Supplies,2519
+2013-09-01,Technology,883
+2013-10-01,Furniture,657
+2013-10-01,Office Supplies,2114
+2013-10-01,Technology,792
+2013-11-01,Furniture,1135
+2013-11-01,Office Supplies,3190
+2013-11-01,Technology,868
+2013-12-01,Furniture,794
+2013-12-01,Office Supplies,2884
+2013-12-01,Technology,936
+2014-01-01,Furniture,544
+2014-01-01,Office Supplies,1452
+2014-01-01,Technology,417
+2014-02-01,Furniture,453
+2014-02-01,Office Supplies,1279
+2014-02-01,Technology,370
+2014-03-01,Furniture,582
+2014-03-01,Office Supplies,1576
+2014-03-01,Technology,528
+2014-04-01,Furniture,529
+2014-04-01,Office Supplies,1652
+2014-04-01,Technology,507
+2014-05-01,Furniture,737
+2014-05-01,Office Supplies,2359
+2014-05-01,Technology,712
+2014-06-01,Furniture,960
+2014-06-01,Office Supplies,3262
+2014-06-01,Technology,1105
+2014-07-01,Furniture,654
+2014-07-01,Office Supplies,1929
+2014-07-01,Technology,669
+2014-08-01,Furniture,883
+2014-08-01,Office Supplies,3148
+2014-08-01,Technology,903
+2014-09-01,Furniture,1169
+2014-09-01,Office Supplies,3590
+2014-09-01,Technology,1034
+2014-10-01,Furniture,866
+2014-10-01,Office Supplies,2214
+2014-10-01,Technology,803
+2014-11-01,Furniture,1084
+2014-11-01,Office Supplies,3342
+2014-11-01,Technology,1130
+2014-12-01,Furniture,1222
+2014-12-01,Office Supplies,3361
+2014-12-01,Technology,1111
+2015-01-01,Furniture,560
+2015-01-01,Office Supplies,1923
+2015-01-01,Technology,639
+2015-02-01,Furniture,477
+2015-02-01,Office Supplies,1422
+2015-02-01,Technology,583
+2015-03-01,Furniture,740
+2015-03-01,Office Supplies,2298
+2015-03-01,Technology,684
+2015-04-01,Furniture,728
+2015-04-01,Office Supplies,2208
+2015-04-01,Technology,658
+2015-05-01,Furniture,857
+2015-05-01,Office Supplies,2671
+2015-05-01,Technology,772
+2015-06-01,Furniture,1076
+2015-06-01,Office Supplies,3768
+2015-06-01,Technology,1165
+2015-07-01,Furniture,724
+2015-07-01,Office Supplies,2145
+2015-07-01,Technology,768
+2015-08-01,Furniture,960
+2015-08-01,Office Supplies,3679
+2015-08-01,Technology,1185
+2015-09-01,Furniture,1382
+2015-09-01,Office Supplies,4136
+2015-09-01,Technology,1319
+2015-10-01,Furniture,1163
+2015-10-01,Office Supplies,3484
+2015-10-01,Technology,1229
+2015-11-01,Furniture,1453
+2015-11-01,Office Supplies,4656
+2015-11-01,Technology,1597
+2015-12-01,Furniture,1527
+2015-12-01,Office Supplies,4553
+2015-12-01,Technology,1433
