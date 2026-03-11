@@ -1,5 +1,5 @@
-Retail Demand Forecasting & Inventory Optimization
-Project Overview
+**Retail Demand Forecasting & Inventory Optimization
+Project Overview**
 
 Retail Demand Forecasting & Inventory Optimization is a data analytics project designed to help retailers make data-driven inventory decisions by predicting future product demand. The project analyzes historical retail sales data, identifies demand patterns, and forecasts future demand using time-series modeling.
 
@@ -7,8 +7,8 @@ Based on these forecasts, the project calculates optimal inventory planning metr
 
 The system integrates Python-based data analysis and forecasting with Power BI dashboards to visualize demand trends, forecast results, and inventory KPIs for decision support.
 
-Business Problem
-
+**Business Problem
+**
 Retail companies often face two major operational challenges:
 
 Overstocking → Increased holding cost and wasted inventory
@@ -17,8 +17,8 @@ Understocking → Lost sales and dissatisfied customers
 
 Accurate demand forecasting combined with inventory planning can help companies maintain optimal stock levels and improve operational efficiency.
 
-Project Objectives
-
+**Project Objectives
+**
 Analyze historical retail sales data
 
 Identify trend, seasonality, and demand volatility
@@ -29,7 +29,7 @@ Calculate optimal safety stock and reorder points
 
 Build a dashboard for demand insights and inventory planning
 
-Dataset
+**Dataset**
 
 The project uses a Global Superstore retail dataset, which contains multi-year transaction data including:
 
@@ -55,9 +55,9 @@ Category
 
 Quantity
 
-Project Workflow
-1. Data Preparation
-
+**Project Workflow
+****1. Data Preparation
+**
 Loaded the dataset using Pandas
 
 Converted date fields into proper datetime format
@@ -70,12 +70,12 @@ Output:
 
 Cleaned dataset containing monthly demand per category
 
-2. Exploratory Data Analysis (EDA)
-
+**2. Exploratory Data Analysis (EDA)
+**
 EDA was performed to understand demand patterns before building the forecasting model.
 
-Key analyses included:
-
+**Key analyses included:
+**
 Overall demand trends over time
 
 Category-wise demand comparison
@@ -84,16 +84,16 @@ Seasonal demand patterns
 
 Demand volatility analysis
 
-Key findings:
-
+**Key findings:
+**
 Demand showed a clear upward trend
 
 Strong yearly seasonality was observed
 
 Office Supplies category had the highest volatility
 
-3. Demand Forecasting
-
+**3. Demand Forecasting
+**
 A SARIMA (Seasonal ARIMA) model was used to forecast future demand.
 
 Model Configuration
@@ -118,19 +118,19 @@ Model performance was evaluated using:
 
 MAPE (Mean Absolute Percentage Error)
 
-Result:
-
+**Result:
+**
 Forecast accuracy ≈ 12% MAPE
 
-4. Demand Forecasting Output
-
+**4. Demand Forecasting Output
+**
 The model generated 12-month demand forecasts, which serve as the foundation for inventory planning.
 
-Output file:
-
-office_supplies_12_month_forecast.csv
-5. Inventory Optimization
-
+**Output file:
+**
+**office_supplies_12_month_forecast.csv
+****5. Inventory Optimization
+**
 Using forecasted demand, key inventory planning metrics were calculated.
 
 Average Monthly Demand
@@ -161,7 +161,7 @@ ROP = (Average Demand × Lead Time) + Safety Stock
 
 This determines the inventory level at which new stock should be ordered.
 
-Dashboard
+**Dashboard**
 
 An interactive Power BI dashboard was developed to visualize:
 
@@ -187,8 +187,8 @@ Reorder point
 
 The dashboard helps stakeholders quickly understand demand patterns and inventory requirements.
 
-Tools & Technologies
-
+**Tools & Technologies
+**
 Python
 Pandas
 NumPy
@@ -198,8 +198,8 @@ Statsmodels (SARIMA)
 Scikit-learn
 Power BI
 
-Project Structure
-Retail-Demand-Forecasting
+**Project Structure
+**Retail-Demand-Forecasting
 │
 ├── data
 │   ├── raw
@@ -220,8 +220,8 @@ Retail-Demand-Forecasting
 │
 ├── requirements.txt
 └── README.md
-Key Outcomes
-
+**Key Outcomes
+**
 Built an end-to-end demand forecasting pipeline
 
 Identified seasonal retail demand patterns
@@ -232,8 +232,8 @@ Designed an inventory planning framework
 
 Developed a business intelligence dashboard for decision support
 
-Future Improvements
-
+**Future Improvements
+**
 Include price and promotion effects
 
 Add region-level demand forecasting
