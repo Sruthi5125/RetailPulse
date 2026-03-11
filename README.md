@@ -1,173 +1,165 @@
-**Retail Demand Forecasting & Inventory Optimization
-Project Overview**
+📦 Retail Demand Forecasting & Inventory Optimization
 
-Retail Demand Forecasting & Inventory Optimization is a data analytics project designed to help retailers make data-driven inventory decisions by predicting future product demand. The project analyzes historical retail sales data, identifies demand patterns, and forecasts future demand using time-series modeling.
 
-Based on these forecasts, the project calculates optimal inventory planning metrics such as safety stock and reorder point, helping businesses reduce stockouts and minimize excess inventory.
 
-The system integrates Python-based data analysis and forecasting with Power BI dashboards to visualize demand trends, forecast results, and inventory KPIs for decision support.
 
-**Business Problem
-**
-Retail companies often face two major operational challenges:
 
-Overstocking → Increased holding cost and wasted inventory
 
-Understocking → Lost sales and dissatisfied customers
 
-Accurate demand forecasting combined with inventory planning can help companies maintain optimal stock levels and improve operational efficiency.
 
-**Project Objectives
-**
-Analyze historical retail sales data
 
-Identify trend, seasonality, and demand volatility
 
-Forecast future demand using time-series models
+📊 Project Overview
 
-Calculate optimal safety stock and reorder points
+Retail Demand Forecasting & Inventory Optimization is an end-to-end analytics project that predicts future product demand and recommends optimal inventory levels using historical retail sales data.
 
-Build a dashboard for demand insights and inventory planning
+The project applies time-series forecasting using SARIMA, analyzes demand patterns through exploratory data analysis, and calculates inventory planning metrics such as safety stock and reorder points.
 
-**Dataset**
+The results are presented through an interactive Power BI dashboard, enabling stakeholders to make data-driven inventory decisions.
 
-The project uses a Global Superstore retail dataset, which contains multi-year transaction data including:
+🎯 Business Problem
 
-Order Date
+Retailers frequently face two major challenges:
 
-Product Category
+📉 Stockouts → Lost revenue due to insufficient inventory
+📦 Overstocking → Increased holding costs and inventory waste
 
-Quantity Sold
+This project addresses these issues by combining demand forecasting with inventory optimization.
 
-Sales
+🧠 Project Architecture
+Raw Retail Dataset
+        │
+        ▼
+Data Cleaning & Preprocessing
+(Pandas, Python)
+        │
+        ▼
+Exploratory Data Analysis
+Trend | Seasonality | Volatility
+        │
+        ▼
+Time Series Forecasting
+SARIMA Model
+        │
+        ▼
+Future Demand Prediction
+12 Month Forecast
+        │
+        ▼
+Inventory Optimization
+Safety Stock & Reorder Point
+        │
+        ▼
+Power BI Dashboard
+Business Insights
+📂 Project Structure
+Retail_Demand_Forecasting
+│
+├── data
+│   ├── raw
+│   │   └── global_superstore_2016.xlsx
+│   │
+│   └── processed
+│       └── monthly_category_demand.csv
+│
+├── notebooks
+│   ├── 01_data_loading_and_overview.ipynb
+│   ├── 02_eda_trend_and_seasonality.ipynb
+│   ├── 03_demand_forecasting_sarima.ipynb
+│   └── 04_inventory_optimization.ipynb
+│
+├── outputs
+│   ├── forecasts
+│   │   └── office_supplies_12_month_forecast.csv
+│   │
+│   └── reports
+│       └── inventory_policy_office_supplies.csv
+│
+├── powerbi
+│   └── demand_inventory_dashboard.pbix
+│
+├── requirements.txt
+└── README.md
+🔍 Exploratory Data Analysis
 
-Customer details
+EDA was performed to understand demand behavior before modeling.
 
-Geographic information
+Key analyses included:
 
-Each row represents a product sold in a customer order transaction.
+✔ Demand trend over time
+✔ Category-wise demand comparison
+✔ Seasonal demand patterns
+✔ Demand volatility measurement
 
-For this project, the primary variables used were:
+Key Findings
 
-Order Date
+Demand shows a growing trend over years
 
-Category
+Strong yearly seasonality
 
-Quantity
+Office Supplies category has the highest demand volatility
 
-**Project Workflow
-****1. Data Preparation
-**
-Loaded the dataset using Pandas
+📈 Demand Forecasting Model
 
-Converted date fields into proper datetime format
+Model used: SARIMA (Seasonal ARIMA)
 
-Aggregated transaction data into monthly demand
-
-Structured data for time-series modeling
-
-Output:
-
-Cleaned dataset containing monthly demand per category
-
-**2. Exploratory Data Analysis (EDA)
-**
-EDA was performed to understand demand patterns before building the forecasting model.
-
-**Key analyses included:
-**
-Overall demand trends over time
-
-Category-wise demand comparison
-
-Seasonal demand patterns
-
-Demand volatility analysis
-
-**Key findings:
-**
-Demand showed a clear upward trend
-
-Strong yearly seasonality was observed
-
-Office Supplies category had the highest volatility
-
-**3. Demand Forecasting
-**
-A SARIMA (Seasonal ARIMA) model was used to forecast future demand.
-
-Model Configuration
+Configuration:
 
 SARIMA (1,1,1)(1,1,1,12)
 
 Where:
 
-(1,1,1) → ARIMA component
+Parameter	Meaning
+p	Auto regression
+d	Differencing
+q	Moving average
+P,D,Q	Seasonal components
+s=12	Yearly seasonality
+📊 Model Performance
 
-(1,1,1,12) → Seasonal component with yearly seasonality
-
-Model Evaluation
-
-The dataset was split into:
-
-Training data: 42 months
-
-Testing data: 6 months
-
-Model performance was evaluated using:
+Evaluation Metric:
 
 MAPE (Mean Absolute Percentage Error)
 
-**Result:
-**
-Forecast accuracy ≈ 12% MAPE
+Result:
 
-**4. Demand Forecasting Output
-**
-The model generated 12-month demand forecasts, which serve as the foundation for inventory planning.
+Forecast Error ≈ 12%
 
-**Output file:
-**
-**office_supplies_12_month_forecast.csv
-****5. Inventory Optimization
-**
-Using forecasted demand, key inventory planning metrics were calculated.
+This level of accuracy is considered acceptable for retail demand forecasting.
+
+📦 Inventory Optimization
+
+Using forecasted demand, the project calculates:
 
 Average Monthly Demand
 
-Represents expected monthly demand.
+Expected monthly consumption.
 
 Demand Volatility
 
-Measured using standard deviation of historical demand.
+Measured using standard deviation.
 
 Safety Stock
-
-Calculated using:
-
 Safety Stock = Z × σ × √(Lead Time)
 
-Where:
+Where
 
 Z = Service level factor
 
 σ = Demand standard deviation
 
-Lead Time = Restocking time
-
-Reorder Point (ROP)
-
+Reorder Point
 ROP = (Average Demand × Lead Time) + Safety Stock
 
-This determines the inventory level at which new stock should be ordered.
+This determines when inventory should be replenished.
 
-**Dashboard**
+📊 Power BI Dashboard
 
-An interactive Power BI dashboard was developed to visualize:
+The Power BI dashboard provides interactive insights including:
 
 Demand Trends
 
-Monthly demand over time
+Monthly demand patterns
 
 Category comparison
 
@@ -179,65 +171,38 @@ Future demand projections
 
 Inventory KPIs
 
-Average demand
+Average Demand
 
-Safety stock
+Safety Stock
 
-Reorder point
+Reorder Point
 
-The dashboard helps stakeholders quickly understand demand patterns and inventory requirements.
+(Add dashboard screenshots below once uploaded)
 
-**Tools & Technologies
-**
-Python
-Pandas
-NumPy
-Matplotlib
-Seaborn
-Statsmodels (SARIMA)
-Scikit-learn
-Power BI
+images/dashboard_overview.png
+images/demand_trends.png
+images/inventory_kpis.png
+🛠 Technologies Used
+Tool	Purpose
+Python	Data processing
+Pandas	Data manipulation
+NumPy	Numerical operations
+Matplotlib	Data visualization
+Seaborn	Statistical visualization
+Statsmodels	SARIMA forecasting
+Scikit-learn	Model evaluation
+Power BI	Dashboard visualization
+🚀 Key Outcomes
 
-**Project Structure
-**Retail-Demand-Forecasting
-│
-├── data
-│   ├── raw
-│   └── processed
-│
-├── notebooks
-│   ├── 01_data_loading_and_overview.ipynb
-│   ├── 02_eda_trend_and_seasonality.ipynb
-│   ├── 03_demand_forecasting_sarima.ipynb
-│   └── 04_inventory_optimization.ipynb
-│
-├── outputs
-│   ├── forecasts
-│   └── reports
-│
-├── powerbi
-│   └── dashboard.pbix
-│
-├── requirements.txt
-└── README.md
-**Key Outcomes
-**
-Built an end-to-end demand forecasting pipeline
+✔ Built an end-to-end forecasting pipeline
+✔ Identified seasonal retail demand patterns
+✔ Achieved ~12% forecasting error
+✔ Implemented inventory optimization framework
+✔ Delivered interactive business intelligence dashboard
 
-Identified seasonal retail demand patterns
+🔮 Future Improvements
 
-Forecasted demand with ~12% prediction error
-
-Designed an inventory planning framework
-
-Developed a business intelligence dashboard for decision support
-
-**Future Improvements
-**
-Include price and promotion effects
-
-Add region-level demand forecasting
-
-Compare multiple models (Prophet, LSTM)
-
-Build automated inventory recommendation system
+• Include price & promotion effects
+• Forecast demand by region or store
+• Compare models (Prophet, XGBoost, LSTM)
+• Build automated inventory recommendation system
